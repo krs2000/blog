@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "heroku-prebuild": "npm install --dev"
   },
   "author": "",
   "license": "ISC",
@@ -46,4 +47,3 @@
     "superagent-promise": "^1.1.0"
   }
 }
-
