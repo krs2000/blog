@@ -31,7 +31,7 @@ class Form extends React.Component {
     const { title, body, author } = this.state;
 
     if(!articleToEdit) {
-      return axios.post('http://localhost:8000/api/articles', {
+      return axios.post('https://shark-blog-one.herokuapp.com/api/articles', {
         title,
         body,
         author,
@@ -39,7 +39,7 @@ class Form extends React.Component {
         .then((res) => onSubmit(res.data))
         .then(() => this.setState({ title: '', body: '', author: '' }));
     } else {
-      return axios.patch(`http://localhost:8000/api/articles/${articleToEdit._id}`, {
+      return axios.patch(`https://shark-blog-one.herokuapp.com/api/articles/${articleToEdit._id}`, {
         title,
         body,
         author,
