@@ -4,10 +4,16 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
+  // "scripts": {
+  //   "test": "echo \"Error: no test specified\" && exit 1",
+  //   "build": "webpack --mode production",
+  //   "start": "webpack-dev-server --mode development --open"
+  // },
   "author": "",
   "license": "ISC",
   "devDependencies": {
